@@ -7,7 +7,7 @@ import MyBanner from "./components/myBanner";
 export default function Home() {
   return (
     <main className="bg-[#F6F7F9] flex flex-col">
-      <div>
+      <div className="">
         <Hero />
       </div>
       <div className="bg-[#ffffff] grid gap-y-8 w-full p-6">

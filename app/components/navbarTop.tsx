@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function NavbarTop() {
   return (
-    <div className="fixed  top-0 left-0 z-50 grid grid-cols-2 gap-3 items-center px-[24px]  py-8 md:py-[40px] md:grid-cols-[1fr_2fr_1fr] gap-y-7 w-full bg-white">
+    <div className="fixed top-0 left-0 z-50 grid grid-cols-2 gap-3 items-center px-[24px] py-8 md:py-[40px] md:grid-cols-[1fr_2fr_1fr] gap-y-7 w-full bg-white">
       {/* Logo */}
       <div className="col-span-1">
         <div className=" h-[28px] sm:h-[44px] text-[24px] sm:text-[32px] leading-[36px]  sm:leading-[48px] tracking-[-0.03em] text-left text-[#3563E9] font-plusJakarta ">
