@@ -10,7 +10,7 @@ export default function Home() {
       <div className="">
         <Hero />
       </div>
-      <div className="bg-[#ffffff] grid gap-y-8 w-full p-6">
+      <div className="bg-[#ffffff] grid gap-y-8 w-full p-8">
         <MyProductCarousel />
       </div>
       <div>

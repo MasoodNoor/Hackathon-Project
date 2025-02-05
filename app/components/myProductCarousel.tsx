@@ -45,11 +45,11 @@ const MyProductCarousel = () => {
   }
 
   return (
-    <section className="w-full max-w-7xl mx-auto p-4 static">
-      <div className="flex justify-between text-[#90A3BF] text-center mb-6 font-plusJakarta">
+    <section className="min-w-80 w-full max-w-7xl mx-auto pr-8 static">
+      <div className="flex justify-between text-black text-center mb-6 font-plusJakarta">
         <h2>Latest Products</h2>
         <Link href="/productpage">
-          <h2 className="hover:underline">View All</h2>
+          <h2 className="hover:underline text-black">View All</h2>
         </Link>
       </div>
       <Swiper
@@ -59,10 +59,11 @@ const MyProductCarousel = () => {
         navigation
         autoplay={{ delay: 3000 }}
         breakpoints={{
-          640: { slidesPerView: 2 },
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
           1024: { slidesPerView: 4 },
         }}
-        className="w-full  relative z-30"
+        className="w-full relative z-30 p-8"
       >
         {products.map((product) => (
           <SwiperSlide key={product.id} className="flex justify-center">
