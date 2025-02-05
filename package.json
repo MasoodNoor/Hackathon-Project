@@ -1,0 +1,50 @@
+{
+  "name": "hackathon-figma",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroui/avatar": "^2.2.7",
+    "@heroui/image": "^2.2.6",
+    "@heroui/system": "^2.4.7",
+    "@heroui/theme": "^2.4.6",
+    "@nextui-org/checkbox": "^2.3.4",
+    "@nextui-org/image": "^2.2.3",
+    "@nextui-org/slider": "^2.4.5",
+    "@nextui-org/system": "^2.4.4",
+    "@nextui-org/theme": "^2.4.1",
+    "@radix-ui/react-checkbox": "^1.1.2",
+    "@radix-ui/react-slot": "^1.1.1",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.72.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.5.1",
+    "framer-motion": "^11.13.3",
+    "lucide-react": "^0.468.0",
+    "next": "14.2.20",
+    "next-sanity": "^9.8.47",
+    "react": "^18",
+    "react-dom": "^18",
+    "sanity": "^3.72.1",
+    "styled-components": "^6.1.14",
+    "swiper": "^11.2.2",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.20",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
