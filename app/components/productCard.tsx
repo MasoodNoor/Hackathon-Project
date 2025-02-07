@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/app/components/ui/button";
+import Link from "next/link";
 
 interface ProductCardProps {
   name: string;
@@ -10,17 +11,19 @@ interface ProductCardProps {
   imageWidth?: number;
   category: string;
   stock: number;
+  slug: string;
 }
 
 const ProductCard = ({
   name,
 
   imageSrc,
-
+  slug,
   price,
   category,
   stock,
 }: ProductCardProps) => {
+  
   return (
     <div className="bg-[#F3F3F3] rounded-[10px] shadow-md overflow-hidden p-4 py-8 w-full h-full">
       {/* Product Image */}
@@ -71,12 +74,15 @@ const ProductCard = ({
 
       {/* Buy Now Button */}
       <div className="flex justify-center">
-        <Button className="bg-black rounded-full px-14 text-sm hover:bg-slate-950">
-          Shop Now
-        </Button>
+        <Link href={`/products/${slug}`} passHref>
+          <Button className="bg-black rounded-full px-14 text-sm hover:bg-slate-950">
+            Shop Now
+          </Button>
+        </Link>
       </div>
     </div>
   );
 };
 
 export default ProductCard;
+

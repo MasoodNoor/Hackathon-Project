@@ -15,6 +15,7 @@ interface Product {
   imageSrc: string;
   category: string;
   stock: number;
+  slug: string;
 }
 
 const SmallGallery = () => {
@@ -56,11 +57,11 @@ const SmallGallery = () => {
             imageSrc={product.imageSrc}
             category={product.category}
             stock={product.stock}
-          />
+            slug={product.slug} />
         ))}
       </div>
       <div className="flex justify-center items-center p-10">
-      <Link href="/productpage"><Button className="bg-black rounded-full px-14 text-sm font-bold hover:bg-slate-950">
+      <Link href="/products"><Button className="bg-black rounded-full px-14 text-sm font-bold hover:bg-slate-950">
           See More
         </Button></Link>
     </div>

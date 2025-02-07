@@ -19,6 +19,7 @@ interface Product {
   imageSrc: string;
   category: string;
   stock: number;
+  slug: string;
 }
 
 const MyProductCarousel = () => {
@@ -48,7 +49,7 @@ const MyProductCarousel = () => {
     <section className="min-w-80 w-full max-w-7xl mx-auto pr-8 static">
       <div className="flex justify-between text-black text-center mb-6 font-plusJakarta">
         <h2>Latest Products</h2>
-        <Link href="/productpage">
+        <Link href="/products">
           <h2 className="hover:underline text-black">View All</h2>
         </Link>
       </div>
@@ -75,7 +76,7 @@ const MyProductCarousel = () => {
               category={product.category}
               imageSrc={product.imageSrc}
               stock={product.stock}
-            />
+              slug={product.slug} />
           </SwiperSlide>
         ))}
       </Swiper>

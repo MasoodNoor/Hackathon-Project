@@ -48,5 +48,20 @@ export default defineType({
       options: { hotspot: true },
       validation: (Rule) => Rule.required(),
     }),
+    defineField({
+      name: "slug",
+      type: "slug",
+      title: "Slug",
+      options: {
+        source: (doc) => `${doc.name}-${doc._id}`, // Use _id for uniqueness
+        maxLength: 96,
+        slugify: (input) =>
+          input
+            .toLowerCase()
+            .replace(/\s+/g, "-")
+            .replace(/[^a-z0-9-]/g, ""), // Remove special characters
+      },
+      validation: (Rule) => Rule.required(),
+    }),
   ],
 });

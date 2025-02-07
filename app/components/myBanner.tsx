@@ -20,7 +20,7 @@ export default function MyBanner() {
           We design products that enhance your every day with features you
           simply won&apos;t find anywhere else.
         </h2>
-        <Link href="/productpage"><Button className="bg-black rounded-full px-14 text-sm font-semibold hover:bg-slate-950">
+        <Link href="/products"><Button className="bg-black rounded-full px-14 text-sm font-semibold hover:bg-slate-950">
           Make It Yours
         </Button></Link>
       </div>

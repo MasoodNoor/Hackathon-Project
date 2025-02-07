@@ -64,7 +64,10 @@ const config: Config = {
         plusJakarta: ["var(--font-plus-jakarta-sans)", "sans-serif"],
       },
       backgroundImage: {
-      parallax:'url("/pictures/main-pic.jpg")',
+        heroparallax: 'url("/pictures/main-pic.jpg")',
+        authparallax: 'url("/pictures/banner.jpg")',
+        productparallax: 'url("/pictures/product-pic.jpg")',
+        
       }
     },
   },
