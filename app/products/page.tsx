@@ -34,8 +34,8 @@ const ProductPage = () => {
       setFilteredProducts(data)
 
       // Extract unique categories and capacities
-      const uniqueCategories = Array.from(new Set(data.map((product: { category: any }) => product.category))) as string[]
-      const uniqueCapacities = Array.from(new Set(data.map((product: { capacity: any }) => product.capacity))) as string[]
+      const uniqueCategories = Array.from(new Set(data.map((product: { category: Product }) => product.category))) as string[]
+      const uniqueCapacities = Array.from(new Set(data.map((product: { capacity: Product }) => product.capacity))) as string[]
 
       setCategories(uniqueCategories)
       setCapacities(uniqueCapacities)

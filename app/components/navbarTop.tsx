@@ -97,7 +97,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Avatar, AvatarIcon } from "@heroui/avatar";
-import { getProducts } from "@/sanity/lib/getProducts";
+
 import CartDrawer from "./addtocart";
 
 interface ProductCardProps {
@@ -114,8 +114,7 @@ interface ProductCardProps {
 
 function NavbarTop() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
-  const products = getProducts(); // Fetch from Sanity'
+  
   const [cart, setCart] = useState<ProductCardProps[]>([]);
 
 

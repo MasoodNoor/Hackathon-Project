@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/app/components/ui/button";
+import Image from "next/image";
 
 interface ProductCardProps {
   name: string;
@@ -45,9 +46,11 @@ export default function ProductClient({ product }: { product: ProductCardProps }
     <div className="pt-4 p-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
       {/* Product Image */}
       <div className="flex flex-col items-center bg-[#F3F3F3]">
-        <img
+        <Image
           src={product.imageSrc}
           alt={product.name}
+          width={200}
+          height={200}
           className="w-full h-auto object-cover rounded-lg shadow-md"
           loading="lazy"
         />
